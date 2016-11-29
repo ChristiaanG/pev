@@ -9,6 +9,7 @@
 class User extends CI_Model{
     function __construct() {
         $this->tableName = 'users';
+        $this->gameTableName = 'games';
         $this->primaryKey = 'id';
     }
     public function checkUser($data = array()){
